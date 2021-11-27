@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albañil</title>
+    <link rel="shortcut icon" href="img/Virtualbooks.png"/>
+</head>
+
+  <link rel="stylesheet" href="css/cabecera.css">
+<link rel="stylesheet" href="css/libros-style.css">
+    <link rel="stylesheet" href="css/estilosmenuprincipal.css">
+<body>
+    <header >
+        
+            <div class="wrapper"></div>
+        <div class="logo"><a href=""><img src="img/chambita2.png" align="left" width="250px" height="200px"></a></div>
+              </div>
+
+        </header>
+    
+         <main>
+
+            <?php
+
+            $id=$_REQUEST['Id'];
+               include("conexion.php");
+            
+                $query="SELECT * FROM servidor WHERE Id='$id'";
+                $resultado= $conexion->query($query);
+                ($row=$resultado->fetch_assoc());
+                    ?> 
+            <div class="foto-libro">
+                
+            <h2>Perfil</h2>
+            <img src="avatar/hombre%20(1).png" width="250" height="300">
+            <h2>Valoración</h2>
+            </div>
+            
+            <div class="infolibro">
+            
+            </div>
+
+            <div class="autor">
+            <h4>Nose</h4>
+                
+             <img src="avatar/trabajo1.jpg" width="250" height="300">
+                 <img src="avatar/trabajo.jpg" width="250" height="300">
+            </div>
+
+            <div class="disp">
+          
+         
+                 <a href="materialdidactico/prestamos.php"><button name="Apartar" type="button">Comentarios</button></a>
+                
+            </div>
+
+            <div class="descrip">
+                <h4>Nombre:</h4>
+                <?php echo $row['nombre'];?> <?php echo $row['segundoNombre'];?> <?php echo $row['apellidoP'];?><?php echo $row['apellidoM'];?>
+      <img src="img/telefono.png" align="" width="22" height="22"><?php echo $row['telefono'];?>  
+            </div>
+           
+        
+         </main>
+
+          <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>875847658</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>875847658</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>875847658</p>
+            </div>
+            <h2 class="titulo-final">&copy; Ulises y sus amigos</h2>
+    </footer>
+</body>
+</html>

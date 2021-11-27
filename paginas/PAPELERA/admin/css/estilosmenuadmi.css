@@ -1,0 +1,73 @@
+*{
+padding: 0;
+margin: 0;
+}
+/*main*/
+main{width: 95%;  max-width: 120rem;
+    margin: 0 auto; font-size: 25px;}
+
+.fw-300centrar-texto{text-align: center;}
+
+/*grid usados dentro de main*/
+main{display: grid;grid-template-columns: .8fr .8fr .8fr ;
+grid-template-rows: .5fr .5fr;grid-gap: 15px;}
+
+.mn{display: grid;
+grid-template-columns:1fr 1fr;
+grid-template-rows: .5fr .5fr;grid-gap: 15px;}
+
+    /*Botones*/
+    main button{font-size:20px ;
+        padding:10px; color: white;
+        background-color: #920000; 
+        text-decoration: none; 
+        border-radius: 17px; margin: auto;
+        transition: .5s;}
+
+    main button:hover {background: red;}
+
+    .l1{border-radius: 10px;margin:10px;transition: .5s;}
+    .l1:hover {background:rgba(144, 143, 143, .3);}   
+
+    .L-G{border-radius: 17px;transition: .5s;}
+    .L-D{border-radius: 17px;transition: .5s;}
+    .L-M{border-radius: 17px;margin:auto;transition: .5s;}
+    .L-T{border-radius: 17px;margin:auto;transition: .5s;}
+
+/*
+    .L-G:hover {background:rgba(144, 143, 143, .3);}
+    .L-D:hover {background:rgba(144, 143, 143, .3);}
+    .L-M:hover {background:rgba(144, 143, 143, .3);}
+   
+*/
+
+
+  /** Footer **/
+  .site-footer {
+    background: #920000; color: white;
+    margin: 0;}
+    
+    .contenedor-footer {
+     padding: 1rem 10px; margin-top:4px;
+    text-align: center;}
+    
+    @media (min-width: 768px) {
+        .contenedor-footer {display: flex;
+    justify-content: space-between;}}
+    
+    .site-footer nav {display: none;}
+    
+    @media (min-width: 768px) {
+    .site-footer nav {display: block;}}  
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h2{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h3{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

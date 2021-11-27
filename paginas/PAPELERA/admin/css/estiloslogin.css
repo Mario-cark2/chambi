@@ -1,0 +1,90 @@
+body { /* en esta parte se le da diseño al cuerpo de lo que es la pagina*/
+    margin: 0;
+    padding: 0;
+    background: url("../img/fondoLogin.png"); /*no-repeat center top linear-gradient(45deg, rgb(247, 233, 189), rgba(248, 198, 89, 0.623))*/
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .login-box { /*en esta parte manda a llamar la clase .login-box y enseguida aplicarle estilos*/
+    border-radius: 15px;
+    width: 500px;
+    height: 420px;
+    background: rgba(60, 67, 99, 0.61);
+    color: 
+    #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+   
+  }
+  .login-box .avatar {
+    background:  rgba(255, 255, 255, 0.65);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+ 
+  }
+  
+  .login-box h1 { /*se le da sieño a lo que son las letras en este caso iniciar sesion*/
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label { /*se ingresa a la clase .login-box para que despues darle estilos a lo que son los label que  en este caso: nombre de usuario y contraseña*/
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input { /* se le dan estilos a lo que son los cuadros de texto*/
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #ffffff;
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    border-radius: 20px;
+  }
+ /* en esta parte se les da un efecto hover para los botones, al pasar el cursos este cambie de color*/
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #48639c;
+    color: rgb(255, 255, 255);
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(119, 117, 117, 0.925);
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }

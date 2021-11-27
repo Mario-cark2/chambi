@@ -1,0 +1,130 @@
+*{
+margin: 0; /* se le da por defecto un margin y padding a 0***/
+padding: 0;
+box-sizing: border-box;
+}
+ 
+/****CUERPO***/
+ body{
+     background: url();
+     background-size: cover; /*para que la imagen de fondo avarque el 100% de la pantalla y se vea completa*/
+     background-attachment: fixed;/*para que este estatico*/
+     font-family: 'Open Sans', sans-serif;/* es el tipo de letra que se le da*/
+
+ }
+
+ /****SE LLAMA A LA CLASE****/
+ .contenedor-form{
+     position: relative;
+   background: rgba(0,0,0,.7);/** se le da color de fondo al combo box del login***/
+   width: 100%;
+   max-width: 500px;/**ancho maximo*/
+   margin: 40px auto;/**se centra**/
+   color: #fff;
+   border-radius: 5px;
+   
+ }
+
+/**se llama a la clase que se encuentra de la clase .contenedor-form **/
+ .contenedor-form .toggle{
+     top: 7px;
+     right: 7px;
+     width: 100px;
+     height: 30px;
+     font-size: 12px;
+     line-height: 25px;
+     text-align: center;
+     border-top: 2px solid #ff851b;
+     border-bottom: 2px solid #ff851b;
+     transition: all .5s ease; /*efecto de transision, al pasar el mouse cambie de color o tenga un efecto*/
+     cursor: pointer;
+     }
+
+ .contenedor-form .toggle span{ 
+     letter-spacing: 1px; /** se le da una separacion de letras a span que es registrarse**/
+ }
+
+ .contenedor-form .toggle:hover{ /** se le da un efecto hover al texto de registrase donde al pasar el puntero este cambia de color*/
+     border-top: 2px solid #0075d9;
+     border-bottom: 2px solid #0075d9;
+ }
+
+ .contenedor-form h2{
+     margin: 0 0 28px 0; /* que le de un margin de arriba 0, derecha 0, aabajo 28px y de izquiera 0*/
+     font-size: 20px; /*tamaño de letra*/
+     font-weight: 400;
+     line-height: 1;
+ }
+/* que nos deje acceder a estos tres input para poder dar estilos*/
+ .contenedor-form input[type="text"],
+ .contenedor-form input[type="password"],
+ .contenedor-form input[type="email"]{
+     outline: none;
+     background: rgba(0,0,0,.5);
+     display: block;
+     width: 100%;
+     padding: 10px 15px;
+     color: #fff;
+     border: none;
+     border-radius: 2px;
+     border-bottom: 4px solid #ff851b;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0 0 20px 0; /*le da un espacio en los campos de textos con margin de  arriba 0, de un costado 0, abajo 20px y ix¿zquierda 0*/ 
+     transition: all .5s ease; /*una transicion a todos los campos de texto de .5 segundo*/
+
+ }
+
+ /* se le aplica animacion a los campos de texto en donde al poner el cursos cambie de color*//
+ .contenedor-form input[type="text"]:focus,
+ .contenedor-form input[type="password"]:focus,
+ .contenedor-form input[type="email"]:focus {
+     border-bottom: 4px solid #0075d9;
+ }
+
+ /**se le da estilos al botom submit*/
+ .contenedor-form input[type="submit"]{
+     background: #ff851b;
+     color: #fff;
+     border: none;
+     width: 100%;
+     padding: 10px 0;
+     font-weight: normal;
+     font-family: ;
+     letter-spacing: 1px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: all .5s ease;
+ }
+
+ .contenedor-form input[type="submit"]:hover{
+     background: rgba(0,117,217,0.7);
+
+ }
+
+ .contenedor-form .reset-password{
+     background: rgba(0,117,217,0.7);
+     width: 100%;
+     padding: 15px 0;
+     text-align: center;
+     border-bottom-right-radius: 5px; /*el borde de abajo boton pero de la derecha que tenga un radio de 5 px*/
+     border-bottom-left-radius: 5px; /*el borde de abajo boton pero de la derecha que tenga un radio de 5 px*/
+ }
+
+ .contenedor-form .reset-password a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 16px; 
+ }
+
+ .contenedor-form .formulario{
+     padding: 40px;
+     display: none; /* efecto para esconder el otro formulario que es de crear cuenta*/
+     
+ }
+
+ /* efecto para que nos muestre el primer formulario*/ 
+ .contenedor-form .formulario:nth-child(2) {
+      display: block;
+ }

@@ -1,0 +1,24 @@
+
+/*cabecera*/
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background - color: #520C27;
+	margin-bottom:2px;
+}
+ 
+.wrapper {
+	width:95%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	 /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	height: 150px;
+}
+ 
+header .logo {
+	color:#f2f2f2;font-size:30px;
+	line-height:3px;float:left;
+	align-content:flex-start; margin-left: 50px;
+    
+}
+ 

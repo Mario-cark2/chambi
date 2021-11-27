@@ -1,0 +1,130 @@
+header {
+	/*width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background: #171919;
+	margin-bottom:5px;
+}
+.wrapper {
+	/*width:30px; /* Establecemos que el ancho sera del 90% */
+	/*max-width:150px;*/ /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin: 5px 5px 5px; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	height: 160px;
+}
+
+.header{
+    margin: auto;
+    /*width: 50px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+header .logo {
+	line-height:40px;float:left;
+	align-content:flex-start; margin-left: 50px;
+}
+
+header .logo2 {
+	line-height:40px;float:left;
+	align-content:flex-end; margin-left: 50px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.nav li a{
+background-color: #171919;
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
+align-content: center;
+
+}
+.nav li a:hover{
+    background-color: teal;
+}
+
+
+.nav > li{
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+display: block;
+}
+
+
+
+
+
+
+
+
+ /** Footer **/
+ footer{
+     height: 195px;
+ }
+    .contenedor-footer {
+     padding: 1rem 10px; margin-top:4px;
+    text-align: center;}
+    
+    @media (min-width: 768px) {
+        .contenedor-footer {display: flex;
+    justify-content: space-between;}}
+    
+    .site-footer nav {display: none;}
+    
+    @media (min-width: 768px) {
+    .site-footer nav {display: block;}}  
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h2{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h3{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.dat {
+    font-size: 14px;
+    font-style: italic;
+    padding: 2%;
+    margin-top: 5px 5px 5px 5px;
+    color: white;
+    background-color: #171919;
+}
+
+.dat a:hover{
+	text-decoration: underline;
+	color: ;
+}
+.widget {
+    float: right;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.contac {
+    display: inline-block;
+}
+
+.franja{
+    width:100%;
+    overflow:hidden; /* Eliminamos errores de float */
+	margin-bottom:9px; 
+}

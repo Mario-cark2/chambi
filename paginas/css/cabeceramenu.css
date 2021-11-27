@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*cabecera*/
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:  #520C27;
+	margin-bottom:5px;
+}
+ 
+.wrapper {
+	width:95%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	 /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	height: 150px;
+}
+ 
+header .logo {
+	color:#f2f2f2;font-size:30px;
+	line-height:3px;float:left;
+	align-content:flex-start; margin-left: 50px;
+    
+}
+ 
+/*header nav {float:right; line-height:150px; margin-right: 5px;}
+ 
+header nav a {
+	display:inline-block;color:#fff;
+	text-decoration:none;padding:10px 10px;
+	line-height:normal;font-size:25px;
+	font-weight:bold; -webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease; transition:all 500ms ease;
+}
+ 
+header nav a:hover {background:red; border-radius:50px;}
+
+.header2 {position: fixed; height:120px;}
+ 
+.header2 .logo {line-height:50px;}
+ 
+.header2 nav {line-height:100px;}
+
+@media screen and (max-width: 700px) {
+	header .logo,
+	header nav, header #Buscador {
+		width:100%;
+		text-align:center; Centramos el menu y el logotipo
+		line-height:50px;
+		margin-top: 0%;
+	}
+ 
+	.header2 {
+		height:auto;
+	}
+ 
+	.header2 .logo,
+	.header2 nav, 
+	header #Buscador {
+		line-height:50px;
+	}
+}*/
+.navega{
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navega INPUT{
+    min-width: 60%;
+padding: 0 300px;
+height: 35px;
+line-height: 35px;
+border: 4px solid #ccc;
+border-radius: 15px;
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+}

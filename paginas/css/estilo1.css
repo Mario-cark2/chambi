@@ -1,0 +1,229 @@
+/*créditos al canal  https://www.youtube.com/watch?v=ys2kaK8HgnA */
+/* hice algunas mejoras */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(236, 120, 11);
+  font-size: 1.2rem; /*tamaño de las letras*/
+  line-height: 1.6em; /* interlineado */
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+/* parrafos */
+p {
+  margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
+}
+
+.container1 {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #0099ff;
+  color: white;
+  padding: 1rem 0;
+
+  /* hacer el menu fijo */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* ocuapamos todo el ancho */
+  right: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  /* lo alineamos al centro */
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: #0033ff;
+}
+
+.main {
+  padding-top: 12rem;
+}
+
+/*PIE DE PAGINA*/
+.footer {
+  background: #ade3f3;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+
+.menu-link{
+    color: black;
+}
+
+.fb{
+    color: blue;
+}
+/* REPONSIVE */
+/* todas las caracteristicas que se mostraran a continuancion seran cuando tenga un ancho maximo de 767px */
+
+@media only screen and (max-width: 767px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+      
+    .navigation ul li {
+        display: block;
+      }
+      
+      /* los enlaces dentro del menu */
+      .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s linear;
+        border-radius: 5px;
+      }
+      
+      .navigation ul li a:hover {
+        background: #cc4444;
+      }
+}
+ .fotoCirculo{
+    width: 210px;
+   height: 210px;
+    background-color: #2E54E0;
+    border-radius: 100%; 
+
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.fotoCirculo > .imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; 
+}
+ 
+ .navega{
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navega INPUT{
+    min-width: 10%;
+padding: 0 20px;
+height: 35px;
+line-height: 45px;
+border: 4px solid #ccc;
+border-radius: 15px;
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+}
+h2{
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2;
+  color: #2c3e50;
+  text-align: center;
+}
+h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+  color: #2c3e50;
+  text-align: center;
+}
+h2{
+      font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2;
+  color: #2c3e50;  
+  margin: auto;
+ 
+}
+p{
+  margin-bottom:0rem;
+  line-height: 2;
+  color: #273746;
+}
+
+.wrapper{
+  max-width: 800px;
+  margin:0 auto;
+}
+section{
+  margin:10px; 
+  padding: 40px; 
+  background: white;
+  border-radius: 12px; 
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+body.sticky-header{
+  padding-top:  100px;
+}
+body.sticky-header header{
+  height: 60px;
+  background: #0099ff;
+
+}
+body.sticky-header header h1{
+  transform: scale(0, 0);
+}

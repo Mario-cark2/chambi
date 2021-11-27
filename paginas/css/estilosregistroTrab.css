@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("");
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+img{
+  max-width: 100%;
+}
+  
+  .registro-box {
+    border-radius: 10px;
+    width: 500px;
+    height: 950px;
+    background: rgba(66, 68, 105, 0.61);
+    color: 
+    #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+    margin-top: 5rem;
+  }
+  
+  .registro-box .avatar {
+    background:  rgba(255, 255, 255, 0.65);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .registro-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .registro-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    
+  }
+  
+  .registro-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .registro-box input[type="text"], .registro-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .registro-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #ffffff;
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .registro-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #4e69a5;
+    color: rgb(255, 255, 255);
+  }
+  
+  .registro-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(119, 117, 117, 0.925);
+  }
+  
+  .registro-box a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .registro-box select {
+    background: rgba(146, 151, 209, 0.534);
+    color:#fff;
+    padding: 10px;
+    width: 40;
+    height: 30;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+
+  }
+  

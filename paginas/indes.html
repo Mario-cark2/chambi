@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menú</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilosmenu.css">
+
+</head>
+    <style type="text/css">
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:  #f5b041;
+    border-radius: 10px;
+      border: 2px solid #0016b0;}
+        
+      .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+  }
+</style>
+<body>
+    <div class="contenedor active" >
+        <header class="header">
+         <div class="contenedor-logo">
+             <button id="boton-menu"></i></button>
+             <a href="" class="logo"></i><span>CHAMBITA</span></a>  <!--se agrega un logo-->
+         </div>
+
+         <div class="barra-busqueda"> <!----se agrega lo que es la barra de busqueda-->
+            <!-- es un placeholder en donde nos indica que pongamos el nombre el tarabajor que queremos buscar-->
+             
+         </div>
+         <div class="boton-header">
+             <a class="boton_personalizado" href="../index.html">Cerrar Sesión</a>
+         </div>
+        </header>
+
+
+        <div class="manu-lateral">
+            <ul>
+                <li class="todos active"><a href="#" class="btn-menu" data-filter="todos">Todos</a></li>
+                <hr>
+                <li class="albañil"><a href="#" class="btn-menu" data-filter="albañil">Albañil</a></li>
+                <hr>
+                <li class="amadecasa"><a href="#" class="btn-menu" data-filter="amadecasa">Ama de casa</a></li>
+                <hr>
+                <li class="carpinteros"><a href="#" class="btn-menu" data-filter="carpinteros">Carpinteros</a></li>
+                <hr>
+                <li class="electricista"><a href="#" class="btn-menu" data-filter="electricista">Electricistas</a></li>
+                <hr>
+                <li class="herreros"><a href="#" class="btn-menu" data-filter="herreros">Herreros</a></li>   
+          
+            </ul>
+        </div>
+
+        <main class="main">
+            <h1 class="titulo">Oficios</h1>
+            <div class="grid-imagenes">
+                <div class="box-img albañil">
+                <a href="Libroadm1.html" class="imagen"><img src="img/albañil.png" alt=""></a>
+                </div>
+             
+                <div class="box-img amadecasa">
+                  <a href="" class="imagen"><img src="img/amadecasa.png" alt=""></a>
+                  </div>
+                  <div class="box-img carpinteros">
+                <a href="" class="imagen"><img src="img/carpintero.png" alt=""></a>
+                  </div>
+                <div class="box-img electricista">
+                <a href="" class="imagen"><img src="img/electricista.png" alt=""></a>
+                </div>
+                <div class="box-img herreros">
+                <a href="" class="imagen"><img src="img/herrero.png" alt=""></a>
+                </div>
+                                
+
+                
+            </div>
+        </main>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+</html>

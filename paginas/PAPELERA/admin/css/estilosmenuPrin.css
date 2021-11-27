@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header"
+                          "menu contenido";
+     transition: all .3s ease;                     
+
+}
+.contenedor .active{
+    grid-template-columns: 300px auto;
+}
+/* -----HEADER ------------------*/
+.header{
+    grid-area: header;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 20px;
+  grid-template-areas: "logo busqueda iconos";
+}
+.header .contenedor-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+.header .contenedor-logo .boton-menu{
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.header .contenedor-logo .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+
+}
+.header .barra-busqueda{
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .barra-busqueda input {
+min-width: 60%;
+padding: 0 15px;
+height: 35pz;
+line-height: 35px;
+border: 1px solid #ccc;
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+}
+.header .barra-busqueda input button{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: teal;
+    background: tomato;
+    cursor: pointer;
+
+}
+
+
+.header .botones-header{
+    grid-area: iconos;
+}
+
+
+/*----------MENU LATERAL---------------------*/
+.manu-lateral{
+    grid-area: menu;
+    background:  #f5b041;
+}
+.manu-lateral a{
+    display: block;
+    padding: 15px 35px;
+    color: #000;   
+}
+.manu-lateral a:hover{ 
+    background: #e5e5e5;
+}
+.menu-lateral a.active{
+    background: #e5e5e5;
+    font-weight: bold;
+}
+.manu-lateral hr{
+    margin: 10px 0;
+    border: 1px solid #dfdfdf;
+
+}
+
+/*-------------CONTENDIO PRICIPAL------------*/
+.main{
+    grid-area: contenido;
+    background: #f9f9f9;
+    padding: 40px
+}
+
+.main .titulo{
+    margin-bottom: 20px;
+}
+.main .grid-imagenes{
+    display: grid;
+    grid-gap: 40px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main .grid-imagenes .imagen{
+    width: 100%;
+    display: block;
+}
+.main .grid-imagenes .imagen img{
+    
+    width: 100%;}

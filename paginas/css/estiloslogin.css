@@ -1,0 +1,217 @@
+body { /* en esta parte se le da diseño al cuerpo de lo que es la pagina*/
+  margin: 0;
+  padding: 0;
+  background:#F1F0F7; /*no-repeat center top linear-gradient(45deg, rgb(247, 233, 189), rgba(248, 198, 89, 0.623))*/
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+.registro-box { /*en esta parte manda a llamar la clase .login-box y enseguida aplicarle estilos*/
+  border-radius: 15px;
+  width: 400px;
+  height: 520px;
+  background-color: white;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  box-sizing: border-box;
+  padding: 15px 30px; 
+}
+
+.registro-box .avatar {
+  background: rgba(255, 255, 255, 0.65);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: center;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.registro-box h1 { /*se le da sieño a lo que son las letras en este caso iniciar sesion*/
+  margin: 0;
+  padding: 0 0 5px;
+  text-align: center;
+  font-size: 22px;
+}
+  
+.registro-box label { /*se ingresa a la clase .login-box para que despues darle estilos a lo que son los label que  en este caso: nombre de usuario y contraseña*/
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+  
+.registro-box input { /* se le dan estilos a lo que son los cuadros de texto*/
+  width: 100%;
+  margin-bottom: 10px;
+}
+  
+.registro-box input[type="text"], .registro-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+  
+.registro-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color:white;
+  color: rgb(8, 8, 8);
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  border-color:#7E364E;
+}
+  
+ /* en esta parte se les da un efecto hover para los botones, al pasar el cursos este cambie de color*/
+.registro-box input[type="submit"]:hover {
+  cursor: pointer;
+  background:#f5b041;
+  color: rgb(255, 255, 255);
+}
+  
+.registro-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(119, 117, 117, 0.925);
+}
+.registro-box a:hover {
+    color: #48639c;
+}
+
+
+.login-box{ /*en esta parte manda a llamar la clase .login-box y enseguida aplicarle estilos*/
+  border-radius: 15px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: center;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px; 
+}
+
+.login-box .avatar {
+  background: rgba(255, 255, 255, 0.65);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: center;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+  
+.login-box h1 { /*se le da sieño a lo que son las letras en este caso iniciar sesion*/
+  margin: 0;
+  padding: 0 0 5px;
+  text-align: center;
+  font-size: 22px;
+}
+  
+.login-box label { /*se ingresa a la clase .login-box para que despues darle estilos a lo que son los label que  en este caso: nombre de usuario y contraseña*/
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+  
+.login-box input { /* se le dan estilos a lo que son los cuadros de texto*/
+  width: 100%;
+  margin-bottom: 10px;
+}
+  
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: center;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+  
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color:white;
+  color: rgb(8, 8, 8);
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  border-color:#f5b041;
+}
+  
+ /* en esta parte se les da un efecto hover para los botones, al pasar el cursos este cambie de color*/
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background:#f5b041;
+  color: rgb(255, 255, 255);
+}
+  
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(119, 117, 117, 0.925);
+}
+  
+.login-box a:hover {
+    color: #48639c;
+}
+
+header {
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background: #520C27;
+  margin-bottom:5px;
+}
+
+.boton-chido{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(119, 117, 117, 0.925);
+}
+   
+.wrapper {
+  width:95%; /* Establecemos que el ancho sera del 90% */
+  max-width:1500px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+  margin: 5px 5px 5px; /* Centramos los elementos */
+  overflow:hidden; /* Eliminamos errores de float */
+  height: 170px;
+}
+
+.boton-chido{
+      border: none;
+      outline: none;
+      height: 40px;
+      background-color:#F5B041;
+      color:white;
+      font-size: 18px;
+      border: 2px ;
+      border-radius: 20px ;
+      border-color: white;
+    }
+
+    .boton-chido[type="submit"]:hover{
+      cursor: pointer;
+      background:white;
+      color:black;
+      border-color:#f5b041;
+    }
+
+    header{
+      height: 80px;
+    }
